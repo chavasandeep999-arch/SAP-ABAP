@@ -1,0 +1,6 @@
+@EndUserText.label: 'product description'
+@MappingRole: true
+define role ZI_GM_PRODUCT_DCL {
+    grant select on ZI_GM_PRODUCT;
+                        
+}

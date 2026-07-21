@@ -1,0 +1,24 @@
+@Metadata.layer: #CORE
+
+annotate entity ZC_GM_PRODUCT with
+{
+
+  @UI.lineItem: [{ position: 10 }]
+  product_id;
+
+  @UI.lineItem: [{ position: 20 }]
+  product_name;
+
+  @UI.lineItem: [{ position: 30 }]
+  base_price;
+
+  @UI.lineItem: [{ position: 40 }]
+  status;
+
+  @UI.selectionField: [{ position: 10 }]
+  store_id;
+
+  @UI.selectionField: [{ position: 20 }]
+  category_id;
+
+}

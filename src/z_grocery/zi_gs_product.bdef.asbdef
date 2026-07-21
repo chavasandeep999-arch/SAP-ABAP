@@ -1,0 +1,33 @@
+managed implementation in class zbp_i_gs_product unique;
+strict ( 2 );
+
+define behavior for ZI_GS_PRODUCT
+persistent table zgs_product
+authorization master ( instance )
+etag master local_last_changed
+lock master
+{
+
+  create;
+  update;
+  delete;
+
+  field ( readonly ) created_by,
+                   created_at,
+                   last_changed_by,
+                   last_changed_at,
+                   local_last_changed;
+
+  validation validateProductName on save { create; field product_name; }
+
+validation validateBasePrice on save { create; field base_price; }
+
+validation validateStore on save { create; field store_id; }
+
+validation validateCategory on save { create; field category_id; }
+
+validation validateCurrency on save { create; field currency; }
+
+  determination setDefaultCurrency on modify { create; }
+
+}

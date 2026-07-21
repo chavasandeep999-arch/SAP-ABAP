@@ -1,0 +1,38 @@
+managed implementation in class zbp_i_gm_product unique;
+strict (2);
+
+define behavior for ZI_GM_PRODUCT
+persistent table zgm_product
+lock master
+authorization master (global)
+{
+
+  create;
+  update;
+  delete;
+
+  field ( readonly ) product_id;
+
+  validation validateProductName on save { create; update; }
+
+  validation validateBasePrice on save { create; update; }
+
+  validation validateStore on save { create; update; }
+
+  validation validateCategory on save { create; update; }
+
+  validation validateProductLength on save { create; update; }
+
+  determination determineStatus on modify { create; }
+
+  mapping for zgm_product
+  {
+    product_id   = product_id;
+    product_name = product_name;
+    store_id     = store_id;
+    category_id  = category_id;
+    base_price   = base_price;
+    status       = status;
+  }
+
+}

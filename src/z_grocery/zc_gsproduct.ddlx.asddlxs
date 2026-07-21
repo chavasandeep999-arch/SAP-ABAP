@@ -1,0 +1,166 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'ProductID'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'ProductID'
+annotate view ZC_GSPRODUCT with
+{
+  @EndUserText.label: 'ProductID'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'ProductID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'ProductID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  ProductID;
+  
+  @EndUserText.label: 'ProductName'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'ProductName'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'ProductName'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  ProductName;
+  
+  @EndUserText.label: 'StoreID'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'StoreID'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'StoreID'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  StoreID;
+  
+  @EndUserText.label: 'CategoryID'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'CategoryID'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'CategoryID'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  CategoryID;
+  
+  @EndUserText.label: 'BasePrice'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'BasePrice'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'BasePrice'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  BasePrice;
+ @EndUserText.label: 'Price Category'
+
+@UI.identification: [{
+  position: 70,
+  label: 'Price Category'
+}]
+
+@UI.lineItem: [{
+  position: 70,
+  label: 'Price Category'
+}]
+
+PriceCategory;
+  
+  @EndUserText.label: 'Currency'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Currency'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Currency'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  Currency;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  LastChangedBy;
+  
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  LastChangedAt;
+  
+  @UI.identification: [ {
+    position: 110 
+  } ]
+  @UI.lineItem: [ {
+    position: 110 
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  LocalLastChanged;
+}

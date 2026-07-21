@@ -1,0 +1,7 @@
+@EndUserText.label: 'Grocery Management Service'
+define service ZUI_GM_SERVICE {
+  expose ZC_GM_PRODUCT  as Product;
+  expose ZI_GM_STORE    as Store;
+  expose ZI_GM_CATEGORY as Category;
+  expose ZI_GM_DISCOUNT as Discount;
+}

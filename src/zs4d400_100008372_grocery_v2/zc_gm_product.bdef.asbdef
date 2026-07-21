@@ -1,0 +1,11 @@
+projection;
+
+define behavior for ZC_GM_PRODUCT
+{
+  use create;
+  use update;
+  use delete;
+
+
+
+}
